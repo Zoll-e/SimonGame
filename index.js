@@ -13,7 +13,6 @@ document.addEventListener('keypress', function () {
 
 })
 
-
 function nextRound() {
     userMoves = [];
     level++;
@@ -39,15 +38,14 @@ function handleUserInput(color) {
     userMoves.push(colorPressed);
 }
 
-
 function reset() {
     userMoves = [];
     aiMoves = [];
     level = 0;
 }
 
-function checkScore(){
-    if(level > highScore){
+function checkScore() {
+    if (level > highScore) {
         highScore = level;
     }
 }
@@ -67,7 +65,6 @@ function checkAnswer(passedNumber) {
 
     if (result) {
         if (aiMoves.length - 1 === userMoves.length) {
-
             setTimeout(function () {
                 nextRound();
             }, 1000)
@@ -78,7 +75,6 @@ function checkAnswer(passedNumber) {
         reset();
         document.querySelector('h1').innerText = "Game over press any key to restart";
         document.querySelector('h3').innerText = "High Score: " + highScore;
-
         document.querySelector('body').style.backgroundColor = 'red';
         setTimeout(function () {
             document.querySelector('body').style.backgroundColor = 'grey';
