@@ -10,6 +10,13 @@ h1 {
     text-align: center;
 }
 
+h3{
+    font-family: 'ArcadeClassic';
+    letter-spacing: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .pressed {
     box-shadow: 0 3px 4px 0 #DBEDF3;
     opacity: 0.5;
