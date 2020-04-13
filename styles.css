@@ -1,21 +1,20 @@
-body{
+body {
     background-color: grey;
-    margin: 5% 25rem;
-
+    margin: 3% 25rem;
 }
 
-h1{
-    
+h1 {
     font-family: 'ArcadeClassic';
     letter-spacing: 1.5rem;
     font-size: 3rem;
     text-align: center;
 }
 
-.pressed{
+.pressed {
     box-shadow: 0 3px 4px 0 #DBEDF3;
     opacity: 0.5;
 }
+
 .btn {
     outline: none;
     border: 10px solid #404B69;
@@ -31,23 +30,20 @@ h1{
     height: 170px;
     text-align: center;
     margin: 10px;
-
-   
-    
 }
 
-.g{
+.g {
     background-color: green;
 }
 
-.r{
+.r {
     background-color: red;
 }
 
-.y{
+.y {
     background-color: yellow;
 }
 
-.b{
+.b {
     background-color: blue;
 }
