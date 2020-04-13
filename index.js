@@ -1,9 +1,6 @@
 var colors = document.querySelectorAll('.btn');
-
 var userMoves = [];
 var aiMoves = [];
-var highScore = 0;
-
 var level = 0;
 var gameStarted = false;
 
@@ -11,6 +8,7 @@ document.addEventListener('keypress', function () {
     if (!gameStarted) {
         nextRound();
         gameStarted = true;
+        colors.forEach(color => registrateUserInput(color));
     }
 
 })
@@ -25,7 +23,6 @@ function nextRound() {
     enabled = true;
 }
 
-colors.forEach(color => registrateUserInput(color));
 
 function registrateUserInput(color) {
 
@@ -54,7 +51,6 @@ function buttonAnimation(passedItem) {
     setTimeout(function () {
         colors[passedItem].classList.remove("pressed");
     }, 200);
-
 }
 
 function checkAnswer(passedNumber) {
